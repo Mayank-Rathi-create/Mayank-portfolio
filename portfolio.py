@@ -81,8 +81,8 @@ PROFILE = {
     "email": "mayankrathinp@gmail.com",
     "github": "https://github.com/Mayank-Rathi-create",
     "linkedin": "https://www.linkedin.com/in/mayank-rathi-555007427/",
-    "Instagram": "https://www.instagram.com/mayankrathi_/",
-    "discord": "mayankrathi0719",
+    "Instagram": "https://www.instagram.com/mayankrathi_11/",
+    "discord": "https://discord.com/channels/@mayankrathi0719",
 }
 
 PROJECTS = [
@@ -123,7 +123,7 @@ st.write("Get in touch or explore my work below.")
 
 
 # Profile buttons
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.link_button(
@@ -148,7 +148,11 @@ with col4:
         "Instagram",
         PROFILE["Instagram"]
     )
-
+with col5:
+    st.link_button(
+        "Discord",
+        PROFILE["discord"]
+    )
 
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -209,7 +213,7 @@ st.write(
 
 
 # Contact buttons
-contact1, contact2, contact3 = st.columns(3)
+contact1, contact2, contact3, contact4 = st.columns(4)
 
 with contact1:
     st.link_button(
@@ -227,6 +231,11 @@ with contact3:
     st.link_button(
         "Instagram",
         PROFILE["Instagram"]
+    )
+with contact4:
+    st.link_button(
+        "Discord",
+        PROFILE["discord"]
     )
 
 
