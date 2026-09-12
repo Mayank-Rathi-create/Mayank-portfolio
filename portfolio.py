@@ -76,8 +76,8 @@ unsafe_allow_html=True
 # Edit this single data section to update the deployed portfolio
 PROFILE = {
     "name": "Mayank Rathi",
-    "role": "Python developer and product-minded problem solver",
-    "bio": "I build useful and playful digital products with Python, data, and thoughtful design.",
+    "role": "Python intermediate student and learner.",
+    "bio": "I like coding in Python and tackling challenging problems.",
     "email": "mayankrathinp@gmail.com",
     "github": "https://github.com/Mayank-Rathi-create",
     "linkedin": "https://www.linkedin.com/in/mayank-rathi-555007427/",
@@ -88,7 +88,7 @@ PROFILE = {
 PROJECTS = [
     {
         "title": "Number guessing game",
-        "description": "A fun and interactive game to test your number prediction skills.",
+        "description": "A fun, simple interactive game to test your number prediction skills.",
         "stack": "Python",
         "url": "https://github.com/Mayank-Rathi-create/number_guess.git"
     },
