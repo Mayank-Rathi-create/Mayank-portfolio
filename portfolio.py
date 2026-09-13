@@ -26,6 +26,7 @@ st.markdown(
     background: #ffffff;
     color: #111827;
 }
+
 .hero {
     padding: 4rem 0 2rem;
 }
@@ -41,32 +42,98 @@ st.markdown(
     font-size: 1.1rem;
 }
 
+
+/* =========================
+   PROJECT CARDS
+   ========================= */
+
 .card {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 1.3rem;
-    min-height: 180px;
-    margin-bottom: .8rem;
+    border-radius: 18px;
+    padding: 1.6rem;
+    min-height: 210px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.25s ease;
 }
 
-a {
-    color: #93c5fd !important;
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
-/* Profile buttons */
+.card h3 {
+    color: #0f172a;
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    color: #334155;
+    line-height: 1.6;
+}
+
+.card small {
+    color: #64748b;
+}
+
+
+/* =========================
+   ALL LINK BUTTONS
+   ========================= */
+
 div[data-testid="stLinkButton"] a {
-    border-radius: 12px;
-    font-weight: 600;
-    padding: 0.6rem 1rem;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+
+    padding: 0.65rem 1.1rem !important;
+
+    background: #111827 !important;
+    color: #ffffff !important;
+
+    border: 1px solid #111827 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+/* Hover effect */
+
+div[data-testid="stLinkButton"] a:hover {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.20);
+}
+
+
+/* Project buttons */
+
+div[data-testid="stLinkButton"] {
+    margin-top: -0.4rem;
+}
+
+
+/* Contact buttons */
+
+div[data-testid="stLinkButton"] a {
     width: 100%;
     text-align: center;
 }
 
-div[data-testid="stLinkButton"] a:hover {
-    transform: translateY(-2px);
-    transition: 0.2s ease;
+
+/* Normal links */
+
+a {
+    color: #2563eb !important;
 }
+
 </style>
 """,
 unsafe_allow_html=True
@@ -190,7 +257,7 @@ st.write(
 # SELECTED WORK
 # ============================================================
 
-st.header("Projects : ")
+st.header("Projects")
 
 columns = st.columns(3)
 
