@@ -21,12 +21,10 @@ st.set_page_config(
 
 st.markdown(
 """
-<style>
 .stApp {
-    background: #0b1020;
-    color: #eef2ff;
+    background: #ffffff;
+    color: #111827;
 }
-
 .hero {
     padding: 4rem 0 2rem;
 }
@@ -34,7 +32,7 @@ st.markdown(
 .hero h1 {
     font-size: clamp(2.8rem, 7vw, 5.8rem);
     line-height: 1;
-    color: #f8fafc;
+    color: #111827;
 }
 
 .hero p, .muted {
@@ -43,8 +41,8 @@ st.markdown(
 }
 
 .card {
-    background: #151d35;
-    border: 1px solid #29365c;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 16px;
     padding: 1.3rem;
     min-height: 180px;
