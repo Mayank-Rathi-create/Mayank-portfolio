@@ -88,6 +88,12 @@ PROFILE = {
 
 PROJECTS = [
     {
+        "title": "Portfolio website",
+        "description": "A simple, responsive portfolio website built with Streamlit.",
+        "stack": "Python, Streamlit",
+        "url": "https://mayank-portfolio.streamlit.app/"
+    },
+    {
         "title": "Number guessing game",
         "description": "A fun, simple interactive game to test your number prediction skills.",
         "stack": "Python",
