@@ -142,7 +142,7 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.link_button(
-        "📧 Email",
+        "Email",
         f"mailto:{PROFILE['email']}"
     )
 
@@ -154,7 +154,7 @@ with col2:
 
 with col3:
     st.link_button(
-        "🔗 LinkedIn",
+        "LinkedIn",
         PROFILE["linkedin"]
     )
 
@@ -232,13 +232,13 @@ contact1, contact2, contact3, contact4 = st.columns(4)
 
 with contact1:
     st.link_button(
-        "📧 Email me",
+        "Email me",
         f"mailto:{PROFILE['email']}"
     )
 
 with contact2:
     st.link_button(
-        "🔗 LinkedIn",
+        "LinkedIn",
         PROFILE["linkedin"]
     )
 
