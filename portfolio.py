@@ -21,6 +21,7 @@ st.set_page_config(
 
 st.markdown(
 """
+<style>
 .stApp {
     background: #ffffff;
     color: #111827;
@@ -32,11 +33,11 @@ st.markdown(
 .hero h1 {
     font-size: clamp(2.8rem, 7vw, 5.8rem);
     line-height: 1;
-    color: #111827;
+    color: #f8fafc;
 }
 
 .hero p, .muted {
-    color: #a5b4fc;
+    color: #64784b;
     font-size: 1.1rem;
 }
 
