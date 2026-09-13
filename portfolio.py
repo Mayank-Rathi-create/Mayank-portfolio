@@ -9,6 +9,7 @@ change, and redeploy.
 """
 
 import streamlit as st
+from pathlib import Path
 
 
 # Page setup and lightweight responsive styling
@@ -113,7 +114,16 @@ st.markdown('<div class="hero">', unsafe_allow_html=True)
 
 st.caption("PORTFOLIO / 2026")
 
-st.markdown(f"# Hi, I’m {PROFILE['name']}.")
+hero_text, hero_photo = st.columns([4, 1])
+
+with hero_text:
+    st.markdown(f"# Hi, I’m {PROFILE['name']}.")
+
+with hero_photo:
+    st.image(
+        str(Path(__file__).parent / "assets" / "profile.jpg"),
+        width=180,
+    )
 
 st.markdown(f"### {PROFILE['role']}")
 
