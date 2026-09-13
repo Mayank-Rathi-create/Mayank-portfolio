@@ -143,8 +143,26 @@ unsafe_allow_html=True
 # Edit this single data section to update the deployed portfolio
 PROFILE = {
     "name": "Mayank Rathi",
-    "role": "Python intermediate student and learner.",
-    "bio": "I like coding in Python and tackling challenging problems.",
+    # Short one-line hook shown right under your name.
+    "role": "CSE student building toward a career in cybersecurity.",
+    # Slightly longer version shown in the About section.
+    "bio": (
+        "First-year Computer Science Engineering student with a focus on "
+        "cybersecurity. Currently learning Python, C, and the fundamentals "
+        "of how systems work, and building hands-on projects as I go."
+    ),
+    # Real skill/interest tags -- keep this honest and specific.
+    # Swap in real ones as you learn them, e.g. "networking basics",
+    # "Linux", "Wireshark", "CTFs".
+    "focus_areas": [
+        "Python",
+        "C",
+        "Streamlit",
+        "problem solving",
+        "web security",
+        "networking fundamentals",
+        "Data structures and algorithms",
+    ],
     "email": "mayankrathinp@gmail.com",
     "github": "https://github.com/Mayank-Rathi-create",
     "linkedin": "https://www.linkedin.com/in/mayank-rathi-555007427/",
@@ -152,25 +170,33 @@ PROFILE = {
     "discord": "https://discord.com/channels/@mayankrathi0719",
 }
 
+# Keep this list to real, finished (or in-progress) work only.
+# Drop placeholder cards like "working on more projects" -- an empty
+# slot makes the whole section look unfinished. Add a card only when
+# there's something behind the link.
 PROJECTS = [
     {
-        "title": "Portfolio website",
-        "description": "A simple, responsive portfolio website built with Streamlit.",
-        "stack": "Python, Streamlit",
-        "url": "https://mayank-portfolio.streamlit.app/"
-    },
-    {
         "title": "Number guessing game",
-        "description": "A fun, simple interactive game to test your number prediction skills.",
+        "description": "A simple interactive Python game that narrows down a hidden number using guess-and-check logic.",
         "stack": "Python",
         "url": "https://github.com/Mayank-Rathi-create/number_guess.git"
     },
     {
-        "title": "Working on more projects",
-        "description": "Exploring new ideas and technologies.",
-        "stack": "Python, java, C",
-        "url": "https://github.com/Mayank-Rathi-create/"
-    }
+        "title": "Portfolio website",
+        "description": "This site, built with Streamlit and Python.",
+        "stack": "Python, Streamlit",
+        "url": "https://mayank-portfolio.streamlit.app/"
+    },
+    # Example of what to add next -- uncomment and fill in once built.
+    # A small security-flavored project (port scanner, Caesar cipher
+    # tool, password strength checker, a CTF writeup) will do far more
+    # for this page than a second beginner exercise.
+    # {
+    #     "title": "Basic port scanner",
+    #     "description": "A command-line tool that scans a host for open TCP ports using Python sockets.",
+    #     "stack": "Python, sockets",
+    #     "url": "https://github.com/Mayank-Rathi-create/port-scanner"
+    # },
 ]
 
 
@@ -189,17 +215,18 @@ st.caption("PORTFOLIO / 2026")
 hero_text, hero_photo = st.columns([4, 1])
 
 with hero_text:
-    st.markdown(f"# Hi, I’m {PROFILE['name']}.")
+    st.markdown(f"# Hi, I'm {PROFILE['name']}.")
 
-with hero_photo:
-    st.image(
-        str(Path(__file__).parent / "assets" / "profile.jpg"),
-        width=180,
-    )
+# Photo section: only turn this back on with a natural, casual photo --
+# a formal ID-style headshot reads as a document photo, not a personal
+# site photo. It's fine to leave this off entirely.
+# with hero_photo:
+#     st.image(
+#         str(Path(__file__).parent / "assets" / "profile.jpg"),
+#         width=180,
+#     )
 
 st.markdown(f"### {PROFILE['role']}")
-
-st.write(PROFILE["bio"])
 
 st.write("Get in touch or explore my work below.")
 
@@ -247,10 +274,7 @@ st.header("About me")
 
 st.write(PROFILE["bio"])
 
-st.write(
-    "**Focus areas:** Python · Streamlit · APIs · Data visualization · "
-    "UX · Clean architecture · vibe coding · problem solving · teamwork"
-)
+st.write("**Focus areas:** " + " · ".join(PROFILE["focus_areas"]))
 
 
 # ============================================================
