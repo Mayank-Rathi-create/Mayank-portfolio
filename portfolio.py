@@ -176,17 +176,18 @@ PROFILE = {
 # there's something behind the link.
 PROJECTS = [
     {
-        "title": "Number guessing game",
-        "description": "A simple interactive Python game that narrows down a hidden number using guess-and-check logic.",
-        "stack": "Python",
-        "url": "https://github.com/Mayank-Rathi-create/number_guess.git"
-    },
-    {
         "title": "Portfolio website",
         "description": "This site, built with Streamlit and Python.",
         "stack": "Python, Streamlit",
         "url": "https://mayank-portfolio.streamlit.app/"
     },
+    {
+        "title": "Number guessing game",
+        "description": "A simple interactive Python game that narrows down a hidden number using guess-and-check logic.",
+        "stack": "Python",
+        "url": "https://github.com/Mayank-Rathi-create/number_guess.git"
+    },
+
     # Example of what to add next -- uncomment and fill in once built.
     # A small security-flavored project (port scanner, Caesar cipher
     # tool, password strength checker, a CTF writeup) will do far more
@@ -199,9 +200,29 @@ PROJECTS = [
     # },
 ]
 
+# Add blog/update entries here. Each item can be a short note about what
+# you're learning, building, or doing lately.
+BLOGS = [
+    {
+        "title": "Learning Computer Networking Basics",
+        "date": "September 2026",
+        "excerpt": "I am currently learning the basics of computer networking and exploring the fundamentals of cybersecurity.",
+        "tags": ["Networking", "Cybersecurity"],
+    },
+    {
+        "title": "Learning C and C++ Language",
+        "date": "August 2026",
+        "excerpt": "I am currently learning the C and C++ programming languages and exploring their applications in system-level programming.",
+        "tags": ["C", "C++", "Programming"],
+    },
+]
+
 
 if "projects" not in st.session_state:
     st.session_state.projects = [project.copy() for project in PROJECTS]
+
+if "blogs" not in st.session_state:
+    st.session_state.blogs = [blog.copy() for blog in BLOGS]
 
 
 # ============================================================
@@ -304,6 +325,28 @@ for index, project in enumerate(st.session_state.projects):
             "View project ↗",
             project["url"]
         )
+
+
+# ============================================================
+# BLOGS / WHAT I'M UP TO
+# ============================================================
+
+st.header("What I'm up to")
+
+for blog in st.session_state.blogs:
+    st.markdown(
+        f"""
+        <div class="card">
+            <small>{blog['date']}</small>
+            <h3>{blog['title']}</h3>
+            <p>{blog['excerpt']}</p>
+            <small>{' · '.join(blog['tags'])}</small>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.write("")
 
 
 # ============================================================
