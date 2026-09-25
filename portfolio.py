@@ -211,7 +211,7 @@ BLOGS = [
     },
     {
         "title": "Learning C and C++ Language",
-        "date": "August 2026",
+        "date": "September 2026",
         "excerpt": "I am currently learning the C and C++ programming languages and exploring their applications in system-level programming.",
         "tags": ["C", "C++", "Programming"],
     },
