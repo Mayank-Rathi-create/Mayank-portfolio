@@ -176,8 +176,14 @@ PROFILE = {
 # there's something behind the link.
 PROJECTS = [
     {
+        "title": "Fix Potholes: A road safety app",
+        "description": "A web app designed to improve road safety by reporting hazardous conditions and alerting municipal authorities to potential dangers.",
+        "stack": "Python, Streamlit",
+        "url": "https://fix-potholes.streamlit.app/"
+    },
+    {
         "title": "Portfolio website",
-        "description": "This site, built with Streamlit and Python.",
+        "description": "A personal portfolio website to showcase my projects, skills, and professional background.",
         "stack": "Python, Streamlit",
         "url": "https://mayank-portfolio.streamlit.app/"
     },
@@ -203,6 +209,12 @@ PROJECTS = [
 # Add blog/update entries here. Each item can be a short note about what
 # you're learning, building, or doing lately.
 BLOGS = [
+    {
+        "title": "Doing DSA practice on LeetCode",
+        "date": "September 2026",
+        "excerpt": "I am currently doing DSA practice on LeetCode and exploring the fundamentals of data structures and algorithms.",
+        "tags": ["DSA", "LeetCode", "Problem Solving"],
+    },
     {
         "title": "Learning Computer Networking Basics",
         "date": "September 2026",
