@@ -210,7 +210,7 @@ PROJECTS = [
 # you're learning, building, or doing lately.
 BLOGS = [
     {
-        "title": "Doing DSA practice on LeetCode",
+        "title": "Doing DSA practice",
         "date": "September 2026",
         "excerpt": "I am currently doing DSA practice on LeetCode and exploring the fundamentals of data structures and algorithms.",
         "tags": ["DSA", "LeetCode", "Problem Solving"],
