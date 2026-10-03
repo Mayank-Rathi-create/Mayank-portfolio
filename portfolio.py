@@ -281,19 +281,18 @@ with col2:
 
 with col3:
     st.link_button(
-        "LinkedIn",
-        PROFILE["linkedin"]
-    )
-
-with col4:
-    st.link_button(
         "Instagram",
         PROFILE["Instagram"]
     )
-with col5:
+with col4:
     st.link_button(
         "Discord",
         PROFILE["discord"]
+    )
+with col5:
+    st.link_button(
+        "LinkedIn",
+        PROFILE["linkedin"]
     )
 
 st.markdown("</div>", unsafe_allow_html=True)
