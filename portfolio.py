@@ -165,9 +165,9 @@ PROFILE = {
     ],
     "email": "mayankrathinp@gmail.com",
     "github": "https://github.com/Mayank-Rathi-create",
-    "linkedin": "https://www.linkedin.com/in/mayank-rathi-555007427/",
     "Instagram": "https://www.instagram.com/mayank_rathi11/",
     "discord": "https://discord.com/channels/@mayankrathi0719",
+    "linkedin": "https://www.linkedin.com/in/mayank-rathi-555007427/",
 }
 
 # Keep this list to real, finished (or in-progress) work only.
