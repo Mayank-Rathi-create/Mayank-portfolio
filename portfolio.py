@@ -373,7 +373,7 @@ st.write(
 
 
 # Contact buttons
-contact1, contact2, contact3, contact4 = st.columns(4)
+contact1, contact2, contact3= st.columns(3)
 
 with contact1:
     st.link_button(
@@ -383,16 +383,10 @@ with contact1:
 
 with contact2:
     st.link_button(
-        "LinkedIn",
-        PROFILE["linkedin"]
-    )
-
-with contact3:
-    st.link_button(
         "Instagram",
         PROFILE["Instagram"]
     )
-with contact4:
+with contact3:
     st.link_button(
         "Discord",
         PROFILE["discord"]
