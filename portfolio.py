@@ -177,12 +177,12 @@ PROFILE = {
 PROJECTS = [
     {
         "title": "URL Checker",
-        "description": "A URL checker that checks if a URL is safe to visit or not.",
+        "description": "A URL checker that checks if a URL is safe to visit or not by comparying it with the original and verified URL's and using AI",
         "stack": "Python, Streamlit",
         "url": "https://mayank-portfolio.streamlit.app/"
     },
     {
-        "title": "Fix Potholes: A road safety app",
+        "title": "Road Watch",
         "description": "A web app designed to improve road safety by reporting hazardous conditions and alerting municipal authorities to potential dangers.",
         "stack": "Python, Streamlit",
         "url": "https://fix-potholes.streamlit.app/"
