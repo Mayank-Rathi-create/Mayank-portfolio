@@ -155,6 +155,7 @@ PROFILE = {
     # Swap in real ones as you learn them, e.g. "networking basics",
     # "Linux", "Wireshark", "CTFs".
     "focus_areas": [
+        "Vibe coding",
         "Python",
         "C",
         "Streamlit",
@@ -216,22 +217,22 @@ PROJECTS = [
 # you're learning, building, or doing lately.
 BLOGS = [
     {
-        "title": "Doing DSA practice",
+        "title": "DSA learning",
         "date": "September 2026",
         "excerpt": "I am currently doing DSA practice on LeetCode and exploring the fundamentals of data structures and algorithms.",
         "tags": ["DSA", "LeetCode", "Problem Solving"],
     },
     {
-        "title": "Learning Computer Networking Basics",
+        "title": "Computer Networking Basics",
         "date": "September 2026",
         "excerpt": "I am currently learning the basics of computer networking and exploring the fundamentals of cybersecurity.",
         "tags": ["Networking", "Cybersecurity"],
     },
     {
-        "title": "Learning C and C++ Language",
+        "title": "C and Python Programming",
         "date": "September 2026",
-        "excerpt": "I am currently learning the C and C++ programming languages and exploring their applications in system-level programming.",
-        "tags": ["C", "C++", "Programming"],
+        "excerpt": "I am currently learning the C and Python programming languages and exploring their applications in system-level programming.",
+        "tags": ["C", "Python", "Programming"],
     },
 ]
 
