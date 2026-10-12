@@ -176,6 +176,12 @@ PROFILE = {
 # there's something behind the link.
 PROJECTS = [
     {
+        "title": "URL Checker",
+        "description": "A URL checker that checks if a URL is safe to visit or not.",
+        "stack": "Python, Streamlit",
+        "url": "https://mayank-portfolio.streamlit.app/"
+    },
+    {
         "title": "Fix Potholes: A road safety app",
         "description": "A web app designed to improve road safety by reporting hazardous conditions and alerting municipal authorities to potential dangers.",
         "stack": "Python, Streamlit",
